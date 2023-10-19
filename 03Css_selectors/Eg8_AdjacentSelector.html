@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adjacent Selector</title>
+    <style>
+        div + p{
+            border:2px solid coral;
+            padding: 4px;
+        }
+        div ~ b{
+            border:4px solid blue;
+            padding:6px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <p>Para one</p>
+    </div>
+    <p>Para Two</p>
+    <p>Para Three</p>
+    <p>Para Four</p>
+
+    <hr>
+
+    <div>
+        <p>part one</p>
+    </div>
+    <b><p>Para Two</p></b>
+    <b>Para Three</b>
+    <b>Para Four</b>
+</body>
+</html>

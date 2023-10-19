@@ -1,0 +1,28 @@
+.c1{
+    border:2px solid blue;
+    margin-bottom:3px;
+    padding:3px;
+    background-color:crimson;
+}
+.c2{
+    border:2px solid blue;
+    margin-bottom:3px;
+    padding:3px;
+    background-color:aqua;
+    top:0px;
+    position:relative;
+}
+.c3{
+    border:2px solid blue;
+    margin-bottom:3px;
+    padding:3px;
+    background-color:bisque;
+    position:absolute;
+    top:0px;
+}
+.c4{
+    border:2px solid blue;
+    margin-bottom:3px;
+    padding:3px;
+    background-color:blueviolet;
+}

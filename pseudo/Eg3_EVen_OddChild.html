@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Even And Odd Child Selector</title>
+    <style>
+        li:nth-child(2n){
+            border:2px solid blue;
+            padding:2px;
+            margin:2px;
+        }
+        li:nth-child(2n+1){
+            border:3px solid green;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>Four</li>
+    </ol>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>FOur</li>
+    </ul>
+</body>
+</html>

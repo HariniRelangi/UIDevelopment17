@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Element Selector</title>
+    <style>
+        p::first-letter{
+            font-size:larger;
+        }
+        p::first-line{
+            background-color:coral;
+        }
+        p::selection{
+            background-color:crimson;
+        }
+        P::before{
+            content:"***";
+        }
+        p::after{
+            content:"...";
+        }
+    </style>
+</head>
+<body>
+   <p>This attribute declares the page's character encoding. It must contain a standard IANA MIME name for character encodings. Although the standard doesn't request a specific encoding, it suggests:
+
+    Authors are encouraged to use UTF-8.</p>
+    <p>Authors should not use ASCII-incompatible encodings to avoid security risk: browsers not supporting them may interpret harmful content as HTML.</p>
+    
+    <p>Authors must not use CESU-8, UTF-7, BOCU-1 and/or SCSU as cross-site scripting attacks with these encodings have been demonstrated.
+    Authors should not use UTF-32 because not all HTML5 encoding algorithms can distinguish it from UTF-16.</p>
+   
+</body>
+</html>
