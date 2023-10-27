@@ -1,0 +1,33 @@
+section{
+    background-color:royalblue;
+}
+section, .main{
+    display:flex;
+    flex:1;
+    margin:5px;
+}
+.main:nth-child(1){
+    display:flex;
+    margin:5px;
+    flex:2;
+}
+.dropdown-button{
+    color:white;
+    padding:15px 45px;
+    background-color:royalblue;
+    border:none;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:whitesmoke;
+}
+.dropdown-container:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content a{
+    display:block;
+    padding:10px 20px ;
+    text-decoration:none;
+    color:black;
+}
