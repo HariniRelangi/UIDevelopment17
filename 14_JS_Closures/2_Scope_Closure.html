@@ -1,0 +1,31 @@
+<html lang="en">
+<head></head>
+<body>
+    <button onclick="user('login')">Login</button>
+    <button onclick="user('register')">Register</button>
+    <button onclick="user('forgetPassword')">Forget Password</button>
+    <script>
+        function user(operation){
+            var a=100;
+            var b=200;
+            function login(){
+                console.log("login");
+                console.log(a);
+                console.log(b);
+            }
+            function register(){
+                console.log("register");
+            }
+            function forgetPassword(){
+                console.log("forget password");
+            }
+            switch(operation){
+                case "login":login();break;
+                case "register":register();break;
+                case "forgetPassword":forgetPassword();break;
+                default:console.log("invalid operation");
+            }
+        }
+    </script>
+</body>
+</html>

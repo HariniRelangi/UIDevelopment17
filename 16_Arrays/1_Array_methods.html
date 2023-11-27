@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <script>
+        var arr=[];
+        arr.push(10);
+        arr.push(20);
+        arr.push(30);
+        arr.unshift(5);
+        var index=arr.indexOf(10);
+        arr.splice(index,0,7);
+       arr.pop();
+        arr.shift();
+        var index1=arr.indexOf(10);
+       arr.splice(index1,1);
+        console.log(arr);
+    </script>
+</body>
+</html>

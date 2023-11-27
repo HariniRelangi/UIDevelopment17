@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <script>
+        function f1(a){
+            a();
+        }
+        function f2(b){
+            b();
+        }
+        function f3(c){
+            c();
+        }
+
+    /* f1(function(){
+        console.log("callback fn");
+            })
+        f2(function(){
+            console.log("callback fn");
+        })
+        f3(function(){
+            console.log("callback fn");
+        })*/
+    //instead of having all these we use callback fn
+       
+        var callbackFn=function(){ //function Expression
+            console.log("callback function");
+        }
+        f1(callbackFn);
+        f2(callbackFn);
+        f3(callbackFn);
+        callbackFn=null;
+        f3(callbackFn);//it doesn't work since it became null
+    </script>
+</body>
+</html>

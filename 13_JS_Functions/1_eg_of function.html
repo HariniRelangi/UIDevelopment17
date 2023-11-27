@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <script>
+        function login(username,password){
+            if(username=="abc" && password=="abc"){
+                console.log("login success");
+            }
+            else{
+                console.log("login failre");
+            }
+        }
+        login("abc","abc");
+        function f(a,b){
+            console.log(a); //undefined
+            console.log(b); //undefined
+        }
+        
+        function f(){
+            console.log("f called");
+        }
+        f(1,2);
+        function f1(a,b){
+            console.log(a);
+            console.log(b);
+        }
+        f1(2,3,4,5); //it assigns only 2,3 to a,b and 4,5 will be stored in object called arguments
+    </script>
+</body>
+</html>

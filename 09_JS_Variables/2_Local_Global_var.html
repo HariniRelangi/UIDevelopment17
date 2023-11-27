@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Local Variable</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            var a=100; //local varibles
+            var b=200;
+            console.log(a);
+            console.log(b);
+        }
+        function f2(){
+            var a = 300; //local variables
+            console.log(a);
+        }
+        var a= 400; //global variables
+        var b=500;
+        function f3(){
+            console.log(a);
+        }
+        function f4(){
+            console.log(b);//it gives undefined due to variable hosting
+            var b=10;
+        }
+        f4();
+        f3();
+        f1();
+        f2();
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <script>
+        var  arr=["kiran","rajesh","naveen","ravi",1,2,3,4,5,6,true,false];
+        //to get strings only to result
+        var result =arr.filter(function(value){
+            return typeof value=="string"; //value=="number"
+        })
+        console.log(result);
+
+        //Eg2
+         var users=["user 1","user 2","user 3","user 4","user 5"];
+        users.forEach(function(value,index){
+            console.log(value);
+        })
+
+//what happens backside of this forEach in the execution
+   
+    /*        function customForEach(callback){
+            for(var i=0;i<users.length;i++){
+                callback(users[i],i);
+            }
+        }
+        customForEach(function(x,i){ //value,index
+            console.log(x);//value
+        })  */
+
+//Eg1
+
+    function f1(a){  //callback function
+        a();        //caling callback function
+    }
+    f1(function(){
+        console.log("Anonymous function");
+    });
+
+    </script>
+</body>
+</html>

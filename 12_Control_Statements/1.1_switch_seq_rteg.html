@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <label>District</lable>
+    <select onchange="districtselected()" id="district">
+        <option >select</option>
+        <option value="East">East</option>
+        <option value="west">west</option>
+        <option value="guntur">guntur</option>
+    </select>
+    <br>
+    <label>Test Center</label>
+    <select id="testcenter">
+
+    </select>
+    <script>
+        function districtselected(){
+            var district=document.getElementById("district").value;
+            var testCenter=document.getElementById("testcenter");
+            switch(district){
+                case "East":testcenter.innerHTML="<option>select</option> <option>amp</option> <option>kkd</option> <option>rjy</option>"; break;
+                case "west":testcenter.innerHTML="<option>select</option> <option>eluru</option> <option>uppal</option> <option>rjy</option>";break;
+                case "guntur":testcenter.innerHTML="<option>select</option> <option>konkapally</option> <option>allavaram</option> <option>gandhi</option>";break;
+            }
+        }
+    </script>
+</body>
+</html>

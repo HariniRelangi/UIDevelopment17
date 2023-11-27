@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <ul id="productslist">
+
+    </ul>
+    <script>
+        var products=[
+            {
+                "name":"A",
+                "image":"https://rukminim2.flixcart.com/image/612/612/kr2e3680/pendrive/type-a-to-type-c/9/z/s/dual-drive-go-upto-150mb-s-sandisk-original-imag4xq5g7jxk8aw.jpeg?q=70"
+            },
+            {
+                "name":"B",
+                "image":"https://rukminim2.flixcart.com/image/612/612/xif0q/pendrive/type-a-to-type-c/b/3/0/sdddc3-128g-i35pc-sandisk-original-imaghfgfngecfarh.jpeg?q=70"
+            },
+            {
+                "name":"D",
+                "image":"https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-pendrive/o/y/u/mbfd-1008-4gb-blk-morebyte-original-imagz5f7xdshu5hn.jpeg?q=70"
+            },
+            {
+                "name":"C",
+                "image":"https://rukminim2.flixcart.com/image/612/612/k7assy80/pendrive/type-a-to-type-c/v/f/f/sandisk-sdddc3-128g-i35-original-imafpkhqjheb4cdh.jpeg?q=70"
+            }
+        ];
+        var index=0;
+        var listitems="";
+        while(index < products.length){
+            var product=products[index];
+            listitems=listitems+"<li>"+product.name+"<img height='60px' width='100px' src="+product.image+"><li>"
+            index++;
+            }
+            console.log(listitems);
+            document.getElementById("productslist").innerHTML=listitems;
+    </script>
+</body>
+</html>
+
+
+var index=1;
+while(index<10){
+    console.log(index);
+    index++;
+}

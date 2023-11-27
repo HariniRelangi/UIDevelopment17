@@ -1,0 +1,40 @@
+<html>
+    <head>Objects</head>
+    <body>
+        <script>
+            var employee={
+                name:"kiran",
+                address:{
+                    hno:"1-56",
+                    city:"Amp",
+                    state:"AP"
+                },
+                projects:[
+                {   
+                     name : "crm",
+                    client :"ABC"
+                 },
+                 {  
+                    name:"www",
+                    client:"XYZ"
+                }
+                ],
+                languages:["hindi","telugu","english"],
+                eid:19410450,
+                ismaried:true
+            }
+            //changing key-value pairs Dynamically
+            employee.previouscompany="TCS";   //adding new element
+            employee.ismaried= false;         //changing key value
+            console.log(employee.ismaried);   
+            delete employee.address.city;
+            console.log(employee.address.city);
+            //printing key values on console
+            console.log(employee.projects[0].client); 
+            console.log(employee.address.city);
+            console.log(employee.languages);
+            console.log(employee.previouscompany); //it thinks that we are creating new key so it checks for its value so gives undefined
+            
+        </script>
+    </body>
+</html>

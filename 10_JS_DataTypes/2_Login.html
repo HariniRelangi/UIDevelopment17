@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <Title>Login Page</Title>
+    </head>
+    <body>
+        <input type="text" id="email" placeholder="email">
+        <input type="password" id="password" placeholder="password">
+        <button onclick="login()">Login</button>
+        <script>
+            function login(){
+                var email=document.getElementById("email").value;
+                var password=document.getElementById("password").value;
+                if(usename.includes==" "){
+                    alert("username shouldnt contain space")
+                    return;
+                }
+                if(email.length==0){
+                    alert("email required");
+                    return;
+                }
+                if(password.length==0){
+                    alert("password required");
+                    return;
+                }
+
+                if(email=="19h41a0450" && password=="harini"){
+                    alert("login succes");
+                }
+                else{
+                    alert("login failed");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="email" placeholder="email">
+        <button onclick="next()">Next</button>
+        <script>
+            function next(){
+                var email=document.getElementById("email").value;
+                console.log(email);
+                email=email.trim();
+                email=email.toLowerCase();
+                if(email.includes("@gmail.com")){}
+                else{
+                    email=email.concat("@gmail.com");
+                }
+                console.log(email);
+            }
+        </script>
+    </body>
+</html>
